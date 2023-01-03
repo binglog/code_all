@@ -1,0 +1,88 @@
+*{
+	padding: 0;
+	margin: 0;
+	line-height: inherit;
+	color: #FFFFFF;
+}
+body{
+	background-color: #23272a;
+}
+#le{
+	color: #FFFFFF;
+	height: 100%;
+	width: 10%;
+	position: fixed;
+	float: left;
+	background-color: #171717;
+	text-align: center;
+}
+#le .logo{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+#le .logo img{
+	width: 100%;
+	border-radius: 50px;
+	width: 60px;
+}
+#le .daohang ul{
+	list-style: none;
+}
+#le .daohang ul li{
+	margin-top: 10px;
+}
+#le .daohang a{
+	text-decoration: dashed;
+}
+
+
+
+
+
+
+
+
+#re{
+	width: 90%;
+	float: right;
+	margin: auto;
+	background-color: #23272a;
+}
+#re .cen{
+	width: 90%;
+	margin: auto;
+}
+#re .banner{
+	height: 500px;
+	overflow: hidden;
+}
+#re .banner1{
+	margin: auto;
+}
+#re .banner1 ul{
+	displey:-webkit-flex; 
+	display: flex; 
+	-webkit-flex-flow:row nowrap; 
+	flex-flow:row nowrap; 
+	overflow-x: auto; 
+	list-style: none;
+	overflow:auto;
+}
+#re .banner1 ul img{
+	width: 400px;
+}
+#re .yxpf ul,.shouban ul{
+	list-style:none ;
+	text-align: center;
+	font-size: 40px;
+}
+#re .yxpf ul a,.shouban ul a{
+	text-decoration: dashed;
+}
+.yxpf ul li,.shouban ul li{
+	float: left;
+	width: 25%;
+}
+.shouban ul li img{
+	width: 100%;
+}

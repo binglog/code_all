@@ -1,0 +1,131 @@
+/* pages/aa/aa.wxss */
+.container{
+    padding: 0rpx 0;
+}
+#w{
+    display: flex;
+    flex-direction:column;
+    background-color: #f7f7f7;
+
+}
+.w{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #f6f6f6;
+    justify-content: space-around;
+    padding: 10px;
+}
+.w view{
+    /* background-color: red; */
+    width: 18%;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.w view:nth-child(even){
+    /* background-color: pink; */
+}
+.w image{
+    width: 43px;
+    height: 43px;
+    margin: 0 auto;
+}
+.w text{
+    font-size: 0.6rem;
+    margin-top: 5px;
+}
+
+/*商品*/
+.shangping image{
+    width: 100%;
+    height: 196px;
+    border-radius: 10px 10px 0 0;
+}
+.shangping view{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.shangping{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+}
+.shangping .spjs{
+    height: 45px;
+    text-overflow: clip;
+    overflow: hidden;
+}
+.shangping .jiage{
+    font-size: 20px;
+    color: red;
+}
+
+/*轮播图片*/
+.bannerimage image{
+    width: 100%;
+    height: 100%;
+    scale: 0.9;
+    border-radius: 10px;
+}
+
+
+/*秒杀*/
+.mslan{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.miaosha{
+    display: inline-block;
+    width: 70px;
+    height: 78px;
+    flex-direction: column;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.miaosha a{
+    height: 100%;
+}
+.miaosha text{
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.miaosha image{
+    width: 100%;
+    height: 100%;
+}
+.msbj{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABYwAAACQBAMAAABZrTKvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTO0PD+wQEOwVFewREekNDewQEOsQEC1iODQAAAAIdFJOUwB9YxIrs0VtoD6UjwAAA/1JREFUeNrt3cGO22QUBeAprsq2qSjdUks420gOsG0VK/sBjdiWEHnNmPeXsP94aIJEQExvmWt9n/oEZ46u72877s3NVa/vPrq9gZTOa3wnDnK6U2PUGJ7YUmE3Ro3h//LtWY1/FAc5fXdW45/EQU7Pzmr8Uhzk9Pysxu/EQfrl+GdhkH+rsFOQVvVwy+12IwzS+nKu8W+iILH3pcVfCYLU9q/vbn8VAwAAAAAAAJ/I88P9m+adHMjs+1XhQSqJvVjNPsiCrKq3DzV+tZEGSf2w+tPv0iDpML7/WOM3xjE5fbE68408SOmX8xp/LQ9S7hSrC7YKMnpxWeMPEiGhZ5c1fikREnp/WWM/7CX9Cc8Zj5zeXtb4lURI6P6yxm8kQkKrv5AI+WtsGmOpAEc8+G/ccGMBPP5gATyMZgG8GsQCeFGTxZ3xnPDIyY+YWMJW4SelLIAf+LOEcexzKyyAj1+xBD5FyBL4MCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkNtGBKQvcVvpMclV7UQOZG/xrt2Yx+ReKbbddtdWkiDxMK623WhnqyD1TtEVtmOS13g/1dhyTF7jZtwd97YKstd4P/XYNGYB07gzjUld4+PUY0sFdmOwG8NVVVVdfdD8cN/YNObp2pT3fjbXa2w15mnP4nZXJu2VkrZlHO+8G8TTncXj5lvOb5srTd9Oj6K1+HFJb8yBuGG87fpJd30cT7zh9qiLnle2I9Pt+sOhrqce/21NN9U/bM/8ixZ31y95PEK73ff1pDnurp3yKn+AR+ZcVjfzOGwY16ca90cRR+a8Hze3Y2czi5kS+0M99/ho4Ia1uCoXvWa85JkVIde6aRgPw9TjfqfGYcN4Xt16syIk324cxkO9Xq/HWdFJOCrm7XzROxzNipApMcY7dbhE7IIXetE7XfKE/OlNU2Jd1ophulchkKAad2UYj7tb76XtkBqfOrye9mM1jpwW80VPyBE723ixW0//hnLBk0jctFiXo7RLXlSNh3FMTNO46Xduakad8OoyjdemccyYKPfb6hKwhENjHoYSslkROI2n7dhSERpzWd0cQCKXtnU5RUs4cqkoB2khB+V7OAU8Tgqnj9BpMZwOIEIO0J7uG5d7QY3HH3E1Lg9LB9M4qMbdfENz3Np6D6MjYy5XvLrx+CPm8HEo71ScXg3S46CYu3J/fl033r8Kybc9Lcdevoo+g/ReDQq93PXzC8ee9odOCy9qhua7nWvce/cqclqM47iZWizkoB53/Vjkpul92yo25vlHTEKOmRPtww/8BRw6juevgYgiaq0YAz52fuwYHrMWx17vfEHhM8RcvvXh/ywODli+8TnLQMAAAADwWfwBKZghRTcFaz4AAAAASUVORK5CYII=)no-repeat;
+    background-size: contain;
+}
+.msbj a{
+    font-size: 13px;
+    color: red;
+}
+.seckill-more-icon {
+    display: inline-block;
+    width: 0.55rem;
+    height: 0.55rem;
+    background: url(//wq.360buyimg.com/wxsq_project/portal/m_jd_index/images/arrow_rt_2ccb8cd5.png) no-repeat;
+    background-size: cover;
+    right: 0.4rem;
+    top: 0.5rem;
+}

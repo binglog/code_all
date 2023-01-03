@@ -1,0 +1,68 @@
+<view class="APP">
+<!-- 轮播图 -->
+    <view class="banner">
+    <!-- 轮播图片 -->
+        <swiper class="banner1">
+            <swiper-item wx:for="{{banner}}"><image src="{{item}}"></image></swiper-item>
+        </swiper>
+    <!-- 开通会员 -->
+        <swiper class="banner2">
+            <swiper-item>
+                <image src="../image/huiyuan.png"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+<!-- 选择到店还是外卖 -->
+<view class="dianpu">
+    <view class="dp">
+        <text bindtap="xz" data-xz="0" class="{{xz==0?'red':''}}">到店取</text>
+        <text bindtap="xz" data-xz="1" class="{{xz==1?'red':''}}">宅急送</text>
+    </view>
+    <swiper current="{{xz}}">
+    <!-- 线下 -->
+        <swiper-item style="padding: 10px;" catchtouchmove='catchTouchMove'>
+            <text>大学城店</text>
+            <!-- 标签 -->
+            <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+                <view class="table1" wx:for="{{xxtab}}" data-tab="{{item.data}}" bindtap="xxtab">{{item.title}} </view>
+            </scroll-view>
+
+            <swiper current="{{xxtable}}">
+            <!-- table内容 -->
+                <swiper-item catchtouchmove='catchTouchMove'>
+                    <scroll-view scroll-x="true"  style="width: 100%">
+                        <view>
+                            <image src="../image/xx1.png"></image>
+                        </view>
+                    </scroll-view>
+                </swiper-item>
+            </swiper>
+
+        </swiper-item>
+
+    <!-- 线上 -->
+        <swiper-item catchtouchmove='catchTouchMove'>
+            <text>沙坪坝区</text>
+        </swiper-item>
+    </swiper>
+
+</view>
+
+<!-- 点餐 -->
+<button>进入点餐</button>
+<!-- KCoffee超值量贩 -->
+    <text style="padding: 10px;font-weight: bold;">KCoffee超值量贩</text>
+    <view class="KCoffee">
+        <view class="sp" wx:for="{{sp}}">
+            <image src="{{item.image}}"></image>
+            <view>
+                <text>{{item.title1}}</text>
+                <text>{{item.title2}}</text>
+            </view>
+            <text>{{item.title}}</text>
+            <text>{{item.money1}}</text>
+            <text>{{item.money2}}</text>
+            <button class="mini-btn" type="warn" size="mini">立即购买</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,37 @@
+<!-- 显示 -->
+<view class="xianshi">
+    <text> {{xianshi}}</text>
+    <text>{{fh}}</text>
+</view>
+<view class="jisuan">
+    <view class="anniu">
+        <button bindtap="an" id="C">C</button>
+        <button bindtap="an" id="DEL">DEL</button>
+        <button bindtap="an" id="%">%</button>
+        <button bindtap="an"id="/">/</button>
+    </view>
+    <view class="anniu">
+        <button bindtap="an"id="7">7</button>
+        <button bindtap="an"id="8">8</button>
+        <button bindtap="an"id="9">9</button>
+        <button bindtap="an"id="*">*</button>
+
+    </view>
+    <view class="anniu">
+        <button bindtap="an"id="4">4</button>
+        <button bindtap="an"id="5">5</button>
+        <button bindtap="an"id="6">6</button>
+        <button bindtap="an"id="-">-</button>
+    </view>
+    <view class="anniu">
+        <button bindtap="an" id="1">1</button>
+        <button bindtap="an" id="2">2</button>
+        <button bindtap="an"id="3">3</button>
+        <button bindtap="an"id="+">+</button>
+    </view>
+    <view class="anniu">
+        <button bindtap="an"id="0">0</button>
+        <button bindtap="an"id=".">.</button>
+        <button bindtap="an"id="=">=</button>
+    </view>
+</view>

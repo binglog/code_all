@@ -1,0 +1,11 @@
+<!--pages/hd/hd.wxml-->
+<image class="bj" src="/pages/img/bj2.png"></image>
+<view class="bj2">
+    <text class="titele">优秀影视</text>
+    <view class="ys">
+        <view class="ys1" wx:for="{{img}}">
+            <image src="{{item.url}}"></image>
+            <text>《{{item.title}}》</text>
+        </view>
+    </view>
+</view>

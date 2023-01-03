@@ -1,0 +1,23 @@
+<wxs module="public" src="../../wxs/public.wxs"></wxs>
+<view class="detail">
+    <view class="title">{{video[0].name}}</view>
+    <view class="info">
+      <view class="row">{{list.author}}</view>  
+      <view class="row">{{video[0].credaTime}}</view> 
+    </view>
+    <view style="width:100%;">
+      <video style="width:100%" src="{{video[0].mp4}}" ></video>
+      <image mode="aspectFit" style="width:100%;" src="{{video[0].img}}"></image>
+    </view>
+    <rich-text class="content" nodes="{{video[0].summary}}"></rich-text>
+
+    <view class="recommend " bindtap="clickLike">
+      <view class="icon">点赞</view>
+      <view class="num">{{list.praise}}</view>
+    </view>
+
+</view>
+
+
+
+

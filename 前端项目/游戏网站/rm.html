@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏直播网站</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 左右布局 -->
+        <div class="row">
+            <!-- 左侧导航 -->
+            <div class="col-1 bar">
+                <!-- 固定max-nav -->
+                <div class="max-nav">
+                    <nav class="nav flex-column" style="margin-top:30px ;">
+                        <a class="nav-link " href="./index.html"><i class="bi bi-display"></i>观看直播</a>
+                        <a class="nav-link bg-primary text-white" href="./rm.html"><i class="bi bi-badge-4k"></i>热门直播</a>
+                        <a class="nav-link" href="./yx.html"><i class="bi bi-box2-heart"></i>游戏库</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- 右侧内容 -->
+            <div class="col-11">
+                <!-- 头部导航 -->
+                <div class="row top">
+                    <!-- 下拉菜单 -->
+                    <div class="col-4">
+                        <div class="dropdown">
+                            <a class="btn bg-transparent text-dark btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                              Dropdown link
+                            </a>
+                          
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- 搜索框 -->
+                    <div class="col-4">
+                        <div class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text bg-transparent text-dark" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                            </div>
+                            <input type="text" style="border-left: 0px;" class="form-control bg-transparent text-dark" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                          </div>
+                    </div>
+                    <!-- 个人栏 -->
+                    <div class="col-4">
+                        <!-- 信息 -->
+                        <i style="margin-right: 10px;" class="bi bi-chat-dots bi-bell "></i>
+                        <i class="bi bi-bell "><span class="badge badge-warning">3</span></i>
+                        <img src="./img/QQ图片20220327135501.jpg" style="width: 35px;margin-left: 10px;" class="rounded-circle" alt="...">
+                    </div>
+                </div>
+                
+                <!--热门 媒体对象 -->
+                <div class="container remen">
+                    <h1 class="text-white">热门</h1>
+                    <div class="row">
+                        <!-- 左右分隔 -->
+                        <div class="col">
+                            <div class="card bg-dark text-white ">
+                                <img src="./img/banner2.png" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                <h5 class="card-title">Pubg（绝地求生）</h5>
+                                <p class="card-text">This is 绝地求生</p>
+                                <p class="card-text">观看人数9999</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                  <div class="col-md-4">
+                                    <img src="./img/QQ图片20220327135501.jpg" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">王者荣耀</h5>
+                                      <p class="card-text">王者荣耀中的玩法以竞技对战为主，玩家之间进行1VS1、3VS3、5VS5等多种方式的PVP对战</p>
+                                      <button type="button" class="btn btn-outline-primary">观看</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div></div>
+                              <div class="row">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                  <div class="col-md-4">
+                                    <img src="./img/QQ图片20220327135501.jpg" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">王者荣耀</h5>
+                                      <p class="card-text">王者荣耀中的玩法以竞技对战为主，玩家之间进行1VS1、3VS3、5VS5等多种方式的PVP对战</p>
+                                      <button type="button" class="btn btn-outline-primary">观看</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 游戏新闻 -->
+                <div class="container xinwen">
+                    <h1>推荐类型</h1>
+                        <div class="media shadow-sm">
+                            <img src="./img/banner1.png" class="mr-3" alt="...">
+                            <div class="media-body">
+                              <h5 class="mt-0">赛博朋克</h5>
+                              <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                            </div>
+                          </div>
+                          <div class="media shadow-sm">
+                            <img src="./img/banner1.png" class="mr-3" alt="...">
+                            <div class="media-body">
+                              <h5 class="mt-0">赛博朋克</h5>
+                              <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                            </div>
+                          </div>
+                          <div class="media shadow-sm">
+                            <img src="./img/banner1.png" class="mr-3" alt="...">
+                            <div class="media-body">
+                              <h5 class="mt-0">赛博朋克</h5>
+                              <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                            </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sp.css">
+</head>
+<body>
+    <div id="App">
+        <div class="container">
+          <!-- 导航 -->
+          <ul class="nav d-flex flex-row position-absolute fixed-top">
+            <li class="nav-item">
+              <a class="nav-link " href="./index.html">首页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bg-primary text-white" href="./sp.html">商品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./zz.html">设计师</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">关于我们</a>
+            </li>
+          </ul>
+  
+          <!-- banner-->
+          <div class="jumbotron jumbotron-fluid banner">
+            <div class="container">
+              <h1 class="display-4">这是个广告</h1>
+              <p class="lead">This is 广告</p>
+            </div>
+          </div>
+
+          <!-- 最热下单 表格-->
+          <table class="table">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">热门商品</th>
+                <th scope="col">商品名</th>
+                <th scope="col">商品价格</th>
+                <th scope="col">下单数量</th>
+              </tr>
+            </thead>
+            <tbody class="bg-light">
+              <tr>
+                <th scope="row">1</th>
+                <td>拖把</td>
+                <td>288￥</td>
+                <td>1,1234</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>闹钟</td>
+                <td>500￥</td>
+                <td>1,1200</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>床</td>
+                <td>1200￥</td>
+                <td>1,0111</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h1>商品</h1>
+          <div class="row">
+            <!-- 下拉菜单 -->
+          <div class="dropdown" style="text-align:left;">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+              选择
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">最新</a>
+              <a class="dropdown-item" href="#">最热门</a>
+              <a class="dropdown-item" href="#">推荐</a>
+            </div>
+          </div>
+            <!-- 第一排 -->
+            <div class="row sp">
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp1.jpg" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp2.jpeg" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp3.png" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp4.jpg" alt="">
+                <p>商品xx</p>
+              </div>
+            </div>
+             <!-- 第二排 -->
+             <div class="row sp">
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp1.jpg" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp2.jpeg" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp3.png" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp4.jpg" alt="">
+                <p>商品xx</p>
+              </div>
+            </div>
+             <!-- 第三排 -->
+             <div class="row sp">
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp1.jpg" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp2.jpeg" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp3.png" alt="">
+                <p>商品xx</p>
+              </div>
+              <div class="col-3">
+                <img class="img-thumbnail" src="./img/sp4.jpg" alt="">
+                <p>商品xx</p>
+              </div>
+            </div>
+          </div>
+          <!-- 分页 -->
+         <div class="row" style="justify-content: space-around;">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+         </div>
+          <!-- 页脚 -->
+        <div class="row" style="align-items: center;padding: 20px;">
+          <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">下面没有了!</h4>
+            <a href="./zz.html">招聘设计师</a>
+            <hr>
+            <p class="mb-0">年轻的团队，扁平化的管理方式，轻松的工作氛围。相信你会喜欢的，话不多说，有意向请直接把简历和个人作品集砸向我。合适的话，我会主动，我们之间的故事就开始啦</p>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

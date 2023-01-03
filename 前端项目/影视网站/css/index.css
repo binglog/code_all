@@ -1,0 +1,18 @@
+img{
+    width: 100%;
+    cursor: pointer;
+}
+.card{
+    border: none;
+    display: block;
+}
+.card-body{
+    padding: 0;
+    text-align: center;
+}
+h5{
+    cursor: pointer;
+}
+.card-deck > .card:hover{
+    background-color:black !important;
+}

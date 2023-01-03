@@ -1,0 +1,217 @@
+*{
+	padding: 0;
+	margin: 0;
+	line-height: inherit;
+	
+	color: aliceblue;
+}
+			/* 显示与隐藏 */
+			#cen1,#cen2,#cen3,#cen4,#cen5{
+				display: none;
+				width: 100%;
+			}
+
+/* nav */
+	#nav{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.3);
+		overflow: hidden;
+		
+	}
+	#nav nav{
+		font-size: 40px;
+		font-weight: bold;
+		max-width: 1200px;
+		margin: auto;
+	}
+	#nav nav a{
+		text-decoration: dashed;
+	}
+	#nav .le{
+		float: left;
+		
+	}
+	#nav .le a{
+		padding-right:10px ;
+	}
+	#nav .re{
+		float: right;
+		
+	}
+	#nav .re a{
+		padding-left:10px ;
+	}
+
+/* 页面右侧 */
+#ri{
+	width: 10%;
+	height: 100%;
+	text-align: center;
+	padding-top: 30%;
+	padding-bottom: 100%;
+	/* background: rgba(3, 159, 255, 0.3); */
+	position: fixed;
+	right: 0;
+	z-index: 1;
+}
+	#ri ul{
+		list-style: none;
+		text-align: left;
+		
+	}
+	#ri li{
+		margin-top: 30px;
+		font-size: 20px;
+	}
+	#ri a{
+		text-decoration: dashed;
+	}
+	
+	/* 左侧悬浮事件 */
+	#ri ul li:hover{
+		background-color:rgba(255, 88, 33, 0.3);
+	}
+	
+	
+/* 全局左侧 */	
+#le{
+	width: 100%;
+}
+#war:hover .logo img{
+	animation-name: example;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	-webkit-filter: brightness(1.0);
+}
+		@keyframes example {
+		  from   {left:-350px;}
+
+		  to {left:-20px;}
+		}
+#war:hover .logo .logo1{
+	animation-name: example1;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	-webkit-filter: brightness(1.0);
+}
+		@keyframes example1 {
+		  from   {left:-195px;}
+		
+		  to {left:130px;}
+		}
+	
+
+	/* 头部war */
+	#war{
+		width: 100%;
+		overflow: hidden;
+		height: 1000px;
+		background-image: url(../../../img/zhandui/IG/bg.png);
+	}
+
+
+
+		/* 头部左侧 */
+
+			#le .le{
+				float: left;
+				width: 60%;
+			}
+			/* 左侧图片 */
+			.le .logo img{
+				height: 430px;
+				position: absolute;
+				top: 40%;
+				-webkit-filter: brightness(0.5);
+				left: -350px;
+			}
+			.le .logo img:hover{
+				animation-name: example;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+				-webkit-filter: brightness(1.0);
+			}
+			.le .logo .logo1{
+				height: 430px;
+				position: absolute;
+				top: 42%;
+				-webkit-filter: brightness(0.5);
+				left: -195px;
+			}
+
+			
+			
+			
+			/* 头部右侧 */
+			#war .ri{
+				width: 40%;
+				float: right;
+				position: relative;
+				top: 30%;
+			}
+			#war .ri ul{
+				list-style: none;
+				padding-right: 30%;
+			}
+			#war .ri ul li{
+				padding-top: 10px;
+				font-weight: bolder;
+			}
+			
+			
+
+			
+			
+			/* 成员 */
+			#cen .bj{
+				    background-image: linear-gradient( to right, rgba(0,0,0,0) 0%, rgba(75,38,244,2) 180%);
+					margin-bottom: 10px;
+			}
+			#cen{
+				font-size: 20px;
+			}
+			#cen .mc{
+				font-size: 30px;
+				font-weight: bold;
+			}
+			#cen .wenzi{
+				width: 35%;
+				padding-top: 20%;
+				padding-left: 5%;
+			}
+			/* 成员1 */
+			.cen1,.cen2,.cen3,.cen4,.cen5{
+				height: 1000px;
+				background-size: 100% 100%;
+				
+			}
+			#cen .cen1{
+				background: url(../../../img/zhandui/FPX/金韩泉上单.png) no-repeat center; 
+				background-size:100% auto;
+			}
+
+			
+			/* 成员2 */
+			#cen .cen2{
+				background-image: url(../../../img/zhandui/FPX/金泰相中单.png);
+			}
+			
+			/* 成员3 */
+			#cen .cen3{
+				background-image: url(../../../img/zhandui/FPX/高天亮打野.png);
+			}
+			
+			
+			/* 成员4 */
+			#cen .cen4{
+				background-image:url(../../../img/zhandui/FPX/林炜翔ADC.png) ;
+			}
+			
+			/* 成员5 */
+			#cen .cen5{
+				background-image: url(../../../img/zhandui/FPX/刘青松辅助.png);
+			}

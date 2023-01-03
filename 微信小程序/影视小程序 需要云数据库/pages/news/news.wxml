@@ -1,0 +1,27 @@
+<view class="out">  
+  <view class="list">    
+    <view class="row" wx:for="{{video}}" wx:key="index">
+      <navigator class="box" bindtap="geDetail" data-id="{{item._id}}">
+        <view class="pic">
+          <image class="img" mode="aspectFill" src="{{item.img}}"/>
+        </view>
+        <view class="text">
+          <view class="title">{{item.name}}</view>
+          <view class="info">
+            <view class="main">评分:{{item.sc}}</view>
+            <view class="main">{{item.credaTime}}</view>
+            <view class="main current">{{item.praise}}点赞</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="loading">
+      <view wx:if="{{loading}}">加载中...</view>
+      <view wx:else="">暂无更多</view>
+  </view>
+</view>
+
+
+

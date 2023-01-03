@@ -1,0 +1,3 @@
+<swiper vertical="ture" indicator-dots >
+    <swiper-item wx:for="{{image}}"><image src="{{item.img}}"></image></swiper-item>
+</swiper>

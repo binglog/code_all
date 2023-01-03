@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/aa/aa",
+    "pages/logs/logs",
+    "pages/bb/bb",
+    "pages/cc/cc",
+    "pages/computer/computer",
+    "pages/jisuanqi/jisuanqi"
+
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/首页.png",
+        "selectedIconPath": "image/首页1.png"
+      },
+      {
+        "pagePath": "pages/aa/aa",
+        "text": "我的",
+        "iconPath": "image/我的.png",
+        "selectedIconPath": "image/我的1.png"
+      }
+    ],
+    "backgroundColor": "#fafafa",
+    "color": "#fff",
+    "selectedColor":"#1296db"
+  },
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "第一课",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+.bj{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+}
+.bj2{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+.title:nth-of-type(1){
+    margin-top: 60px;
+}
+.title{
+    color: rgb(180, 0, 0);
+    font-size: 50px;
+    margin-left:60px ;
+}
+.tiele1{
+    color: rosybrown;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.j101{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(180, 0, 0);
+}
+video{
+    margin: 0 auto;
+}
+

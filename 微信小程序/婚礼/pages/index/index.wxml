@@ -1,0 +1,30 @@
+<view id="app">
+<!-- 背景 -->
+    <image class="bg_1" src="/image/update/bg_1.png"></image>
+<!-- 内容 -->
+    <view class="container">
+        <view class="player">
+            <image bindtap="player" class="{{puass}}" src="/image/update/music_icon.png"></image>
+            <image class="{{puass1}}" src="/image/update/music_play.png"></image>
+        </view>
+        <image class="bg_2" src="/image/update/save_the_date.gif"></image>
+        <text class="h1">邀请函</text>
+        <image class="bg_3" src="/image/update/avatar.png"></image>
+        <view class="cent">
+            <view class="a">
+                <text>王辉辉</text><image bindtap="tel1" src="/image/update/tel.png"></image>
+                <text>新郎</text>
+            </view>
+            <image src="/image/update/wedding.png"></image>
+            <view class="b">
+                <text>张琳琳</text><image bindtap="tel2" src="/image/update/tel.png"></image>
+                <text>新娘</text>
+            </view>
+        </view>
+        <view class="text">
+            <text>我们诚邀您来参加我们的婚礼</text>
+            <text>时间：2019年11月25日</text>
+            <text>地点：北京市海定区：xxxxx</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,99 @@
+#app{
+    width: 100vw;
+    height: 100vh;
+    color: rgb(230, 49, 133);
+    font-weight: bold;
+}
+
+.bg_1{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 999;
+    align-items: center;
+    top: 0;
+}
+.bg_2{
+    width: 100px;
+    height: 100px;
+
+}
+.h1{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bg_3{
+    width: 140px;
+    height: 140px;
+    border: 2px solid rgb(230, 49, 133);
+    border-radius: 50%;
+}
+.cent{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.cent image{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right:20px ;
+}
+.cent .a,.cent .b{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.cent .a image,.cent .b image{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -40px;
+    top: -5px;
+    border: 1px solid rgb(230, 49, 133);
+    border-radius: 10px;
+}
+.text{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.text text:nth-of-type(2){
+    margin-top: 10px;
+}
+.player{
+    position: absolute;
+    right: 0px;
+
+}
+.player image:nth-of-type(1){
+    width: 80px;
+    height: 80px;
+    animation: musi 3s linear infinite;
+}
+.puass{
+    animation-play-state: paused !important;
+}
+.puass1{
+    rotate: 0deg !important;
+}
+@keyframes musi{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.player image:nth-of-type(2){
+    width: 28px;
+    height: 80px;
+    position: relative;
+    left: -18px;
+    rotate: 30deg;
+}

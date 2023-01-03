@@ -1,0 +1,15 @@
+<!--pages/ls/ls.wxml-->
+<image class="bj" src="/pages/img/bj2.png"></image>
+<view class="bj2">
+    <text class="title">建党历史</text>
+    <view class="ls">
+        <swiper>
+            <swiper-item wx:for="{{ls}}">
+                <text style="font-size: 21px;color: aliceblue;">{{item.title}}</text>
+                <image src="{{item.img}}"></image>
+                <text style="background: rgb(255 255 255 / 20%);">历史信息</text>
+                <text style="background: rgb(255 255 255 / 20%);">{{item.xx}}</text>
+            </swiper-item>
+        </swiper> 
+    </view>
+</view>

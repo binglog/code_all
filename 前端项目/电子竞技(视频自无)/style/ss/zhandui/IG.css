@@ -1,0 +1,197 @@
+*{
+	padding: 0;
+	margin: 0;
+	line-height: inherit;
+	
+	color: aliceblue;
+}
+
+
+/* nav */
+	#nav{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.3);
+		overflow: hidden;
+		
+	}
+	#nav nav{
+		font-size: 40px;
+		font-weight: bold;
+		max-width: 1200px;
+		margin: auto;
+	}
+	#nav nav a{
+		text-decoration: dashed;
+	}
+	#nav .le{
+		float: left;
+		
+	}
+	#nav .le a{
+		padding-right:10px ;
+	}
+	#nav .re{
+		float: right;
+		
+	}
+	#nav .re a{
+		padding-left:10px ;
+	}
+
+/* 页面右侧 */
+#ri{
+	width: 10%;
+	height: 100%;
+	text-align: center;
+	padding-top: 30%;
+	padding-bottom: 100%;
+	/* background: rgba(3, 159, 255, 0.3); */
+	position: fixed;
+	right: 0;
+	z-index: 1;
+}
+	#ri ul{
+		list-style: none;
+		text-align: left;
+		
+	}
+	#ri li{
+		margin-top: 30px;
+		font-size: 20px;
+	}
+	#ri a{
+		text-decoration: dashed;
+	}
+	
+	/* 左侧悬浮事件 */
+	#ri ul li:hover{
+		background-color:rgba(255, 88, 33, 0.3);
+	}
+	
+	
+/* 全局左侧 */	
+#le{
+	width: 100%;
+}
+#war:hover .logo img{
+	animation-name: example;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	-webkit-filter: brightness(1.0);
+}
+	
+
+	/* 头部war */
+	#war{
+		width: 100%;
+		overflow: hidden;
+		height: 1000px;
+		background-image: url(../../../img/zhandui/IG/bg.png);
+	}
+
+
+
+		/* 头部左侧 */
+
+			#le .le{
+				float: left;
+				width: 60%;
+			}
+			/* 左侧图片 */
+			.le .logo img{
+				height: 1000px;
+				position: relative;
+				left: -520px;
+				-webkit-filter: brightness(0.5);
+			}
+			.le .logo img:hover{
+				animation-name: example;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+				-webkit-filter: brightness(1.0);
+			}
+			
+			
+			/* 头部右侧 */
+			#war .ri{
+				width: 40%;
+				float: right;
+				position: relative;
+				top: 30%;
+			}
+			#war .ri ul{
+				list-style: none;
+				padding-right: 30%;
+			}
+			#war .ri ul li{
+				padding-top: 10px;
+				font-weight: bolder;
+			}
+			
+			
+			@keyframes example {
+			  from   {left:-500px;}
+
+			  to {left:-210px;}
+			}
+			
+			
+			/* 显示与隐藏 */
+			#cen1,#cen2,#cen3,#cen4,#cen5{
+				display: none;
+			}
+			
+			
+			
+			/* 成员 */
+			#cen .bj{
+				    background-image: linear-gradient( to right, rgba(0,0,0,0) 0%, rgba(75,38,244,2) 180%);
+					margin-bottom: 10px;
+			}
+			#cen{
+				font-size: 20px;
+			}
+			#cen .mc{
+				font-size: 30px;
+				font-weight: bold;
+			}
+			#cen .THESHY{
+				width: 35%;
+				padding-top: 20%;
+				padding-left: 5%;
+			}
+			/* 成员1 */
+			#cen .cen1{
+				background-image: url(../../../img/zhandui/IG/theshy1上单.png);
+				height: 1000px;
+			}
+
+			
+			/* 成员2 */
+			#cen .cen2{
+				background-image: url(../../../img/zhandui/IG/rookie1中单.png);
+				height: 1000px;
+			}
+			
+			/* 成员3 */
+			#cen .cen3{
+				background-image: url(../../../img/zhandui/IG/ning打野.png);
+				height: 1000px;
+			}
+			
+			
+			/* 成员4 */
+			#cen .cen4{
+				background-image:url(../../../img/zhandui/IG/puff1射手.png) ;
+				height: 1000px;
+			}
+			
+			/* 成员5 */
+			#cen .cen5{
+				background-image: url(../../../img/zhandui/IG/baolan辅助.png);
+				height: 1000px;
+			}

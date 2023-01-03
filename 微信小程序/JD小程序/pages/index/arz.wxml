@@ -1,0 +1,19 @@
+<!-- 阿尔兹海默症 -->
+    <!-- 轮播 -->
+    <swiper indicator-dots="true" 	indicator-color="rgba(255,255,255)">
+        <swiper-item style="border-radius: 10px;"><image style="width: 100%;height: 100%;" src="http://p1.music.126.net/kxh0M2SZngPjOLPB-GO73A==/109951167337405855.jpg?imageView&quality=89"></image></swiper-item>
+        <swiper-item><image src="http://p1.music.126.net/kxh0M2SZngPjOLPB-GO73A==/109951167337405855.jpg?imageView&quality=89"></image></swiper-item>
+        <swiper-item><image src="http://p1.music.126.net/kxh0M2SZngPjOLPB-GO73A==/109951167337405855.jpg?imageView&quality=89"></image></swiper-item>
+    </swiper>
+
+<view class="jsgd" style="margin: 10px;">
+    <text>阿尔兹海默症 推荐！</text>
+        <view class="gedan" wx:for="{{aegedan}}">
+            <image bindtap="genhuan" src="{{item.image}}" style="width: 50px;"></image>
+            <view style="display: flex; flex-direction: column;">
+                <text>{{item.title}}</text>
+                <text>{{item.name}}</text>
+            </view>
+            <text>{{item.time}}</text>
+        </view>
+    </view>

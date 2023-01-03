@@ -1,0 +1,14 @@
+.App2{
+    
+    background-color: black;
+}
+.card{
+    border: none;
+}
+.jiaru{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    text-align: center;
+}

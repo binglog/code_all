@@ -1,0 +1,38 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #f5f6f7;
+}
+#war{
+	border-radius: 20px;
+	padding: 50px;
+	background: #ffffff;
+	    width: 880px;
+	    margin: auto;
+		margin-top: 20px;
+	
+}
+img{
+	width: 100%;
+}
+.bt{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+.xx{
+	margin-top: 20px;
+}
+.in1,.in2,p{
+	line-height: 30px;
+}
+.in1{
+	color: #22CDFC;
+	font-weight: bold;
+}
+.in3{
+	color: red;
+	font-weight: bold;
+}

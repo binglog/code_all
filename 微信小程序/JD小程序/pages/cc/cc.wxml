@@ -1,0 +1,18 @@
+<!--pages/cc/cc.wxml-->
+<view class="input">
+    <view>
+        <text>请输入第一个数字</text>
+        <input bindinput="num1change" v-model="n1" type="digit" name="" id="" /> 
+    </view>
+    <view>
+        <text>请输入第二个数字</text>
+        <input bindinput="num2change" type="digit" name="" id="" />
+    </view>
+    <view style="margin-top: 10px;">
+        <button disabled="{{nanniu1}}"  bindtap="compare" size="default"  type="primary" >比较</button>
+    </view>
+    <view>
+        <text>比较结果：{{bijiao}}</text>
+    </view>
+    <button bindtap="qingchu">清除</button>
+</view>

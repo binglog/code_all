@@ -1,0 +1,34 @@
+.App{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/bj.jpg)no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.topnav{
+    font-size: 20px;
+}
+/* 取消点击描边 */
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
+/* 取消背景 描边 */
+.dropdown-menu{
+    background-color:transparent;
+    border: 0;
+}
+.diz{
+    margin-bottom: 150px;
+}
+h5{
+    padding-left: 13px;
+}
+.diz .col-2{
+    padding: 15px;
+}
+.diz .col-2:nth-last-of-type(2){
+    text-align: center;
+}
+button{
+    font-size: 30px !important;
+}

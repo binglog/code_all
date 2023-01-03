@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏直播网站</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/yx.css">
+</head>
+<body>
+    <!-- 左右布局 -->
+        <div class="row">
+            <!-- 左侧导航 -->
+            <div class="col-1 bar">
+                <!-- 固定max-nav -->
+                <div class="max-nav">
+                    <nav class="nav flex-column" style="margin-top:30px ;">
+                        <a class="nav-link " href="./index.html"><i class="bi bi-display"></i>观看直播</a>
+                        <a class="nav-link" href="./rm.html"><i class="bi bi-badge-4k"></i>热门直播</a>
+                        <a class="nav-link bg-primary text-white" href="./yx.html"><i class="bi bi-box2-heart"></i>游戏库</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- 右侧内容 -->
+            <div class="col-11">
+                <!-- 头部导航 -->
+                <div class="row top">
+                    <!-- 下拉菜单 -->
+                    <div class="col-4">
+                        <div class="dropdown">
+                            <a class="btn bg-transparent text-dark btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                              Dropdown link
+                            </a>
+                          
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- 搜索框 -->
+                    <div class="col-4">
+                        <div class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text bg-transparent text-dark" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                            </div>
+                            <input type="text" style="border-left: 0px;" class="form-control bg-transparent text-dark" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                          </div>
+                    </div>
+                    <!-- 个人栏 -->
+                    <div class="col-4">
+                        <!-- 信息 -->
+                        <i style="margin-right: 10px;" class="bi bi-chat-dots bi-bell "></i>
+                        <i class="bi bi-bell "><span class="badge badge-warning">3</span></i>
+                        <img src="./img/QQ图片20220327135501.jpg" style="width: 35px;margin-left: 10px;" class="rounded-circle" alt="...">
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="container">
+                    <!-- 游戏排行 -->
+                    <div class="row">
+                        <table class="table text-danger">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">游戏名称</th>
+                                <th scope="col">正在游玩（人数）</th>
+                                <th scope="col">热度（次数）</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Pubg（绝地求生）</td>
+                                <td>16155</td>
+                                <td>54845623</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>xxx</td>
+                                <td>4546</td>
+                                <td>5415616</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>xxxx</td>
+                                <td>564165</td>
+                                <td>56415646</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    
+                    <!-- 游戏Top -->
+                    <h1 class="text-white">TOP</h1>
+                    <div class="row text-white  yxtop">
+                        <div class="card col-5 shadow" style="width: 18rem;">
+                            <img src="./img/banner1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">游戏名</h5>
+                              <p class="card-text">游戏介绍</p>
+                              <a href="#" class="btn btn-primary">GO PLAY</a>
+                            </div>
+                          </div>
+                          <div class="card col-5 shadow" style="width: 18rem;">
+                            <img src="./img/banner1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">游戏名</h5>
+                              <p class="card-text">游戏介绍</p>
+                              <a href="#" class="btn btn-primary">GO PLAY</a>
+                            </div>
+                          </div>
+                          <div class="card col-5 shadow" style="width: 18rem;">
+                            <img src="./img/banner1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">游戏名</h5>
+                              <p class="card-text">游戏介绍</p>
+                              <a href="#" class="btn btn-primary">GO PLAY</a>
+                            </div>
+                          </div>
+                          <div class="card col-5 shadow" style="width: 18rem;">
+                            <img src="./img/banner1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">游戏名</h5>
+                              <p class="card-text">游戏介绍</p>
+                              <a href="#" class="btn btn-primary">GO PLAY</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

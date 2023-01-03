@@ -1,0 +1,55 @@
+<!--pages/aa/aa.wxml-->
+
+<view id="w">
+    <!-- 导航 -->
+<page-meta>
+  <navigation-bar
+    title="{{nbTitle}}"
+    loading="{{nbLoading}}"
+    front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}"
+    color-animation-duration="2000"
+    color-animation-timing-func="easeIn"
+  />
+</page-meta>
+
+    <!-- 轮播图 -->
+    <swiper  indicatorDots='true' indicator-active-color='#fff' autoplay="true" interval	="3000" circular="true" style="padding: 10px 0 10px 0;background-color: #f7f7f7;">
+        <swiper-item class="bannerimage" wx:for="{{banner}}"><image src="{{item.bgck}}"></image></swiper-item>
+    </swiper>
+
+    <!-- 图标导航 -->
+    <view class="w">
+        <view class="w0" wx:for="{{url}}">
+            <image src="{{item.src}}"></image>
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+
+    <!--京东秒杀-->
+    <view class="mslan">
+        <view class="msbj">
+            <text>京东秒杀</text>
+            <a href="">更多秒杀<i class="seckill-more-icon"></i></a>
+        </view>
+        <scroll-view scroll-x="true" style="width: 100%;white-space: nowrap;">
+            <view class="miaosha"  wx:for="{{miaosha}}">
+               <a href=""><image src="{{item.image}}"></image></a>
+                <text>{{item.jiage}}</text>
+            </view>
+        </scroll-view>
+    </view>
+
+    <!--商品信息-->
+    <view class="shangping" >
+        <view wx:for="{{goods}}">
+            <image src="{{item.iamgesrc}}"></image>
+            <text class="spjs">{{item.goodsName}}</text>
+            <text class="jiage">{{item.price}}</text>
+        </view>
+    </view>
+    
+    
+</view>
+
+

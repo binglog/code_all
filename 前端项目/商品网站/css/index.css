@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+.nav{
+    z-index: 999;
+    left: 40%;
+    font-size: 21px;
+}
+.nav a{
+    color: black;
+}
+.xuanxiangka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1{
+    margin-top: 30px;
+}
+
+.sp{
+    max-width: 1200px;
+    display:flex;
+    margin: auto;
+}
+.btn-primary{
+    margin-top: 5px;
+}
+.spdm{
+    background: url(../img/banner2.png);
+    background-size: 100% 100%;
+    margin-top: 30px;
+    height: 400px;
+}
+
+.btn-primary{
+    color: #000;
+    background-color:#ffff;
+}
+.tuijian h5{
+    text-align: left;
+}
+.tuijian img{
+    width: 120px;
+}

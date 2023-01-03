@@ -1,0 +1,282 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/* 头部 导航 */
+/* nav */
+	#nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 3;
+		background-color: rgba(255,255,255,0.3);
+		overflow: hidden;
+		
+	}
+	#nav nav{
+		font-size: 40px;
+		font-weight: bold;
+		max-width: 1200px;
+		margin: auto;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+	#nav nav a{
+		text-decoration: dashed;
+		color: #FFFFFF;
+	}
+	#nav ul{
+		list-style: none;
+	}
+	#nav .zhoubian .xianshi,.saishi .xianshi{
+		display: none;
+	}
+
+	#nav:hover .xianshi{
+		display: block;
+	}
+	nav ul{
+		background-color: rgba(255,255,255,0);
+	}
+	nav ul li{
+		font-size: 17px;
+	}
+
+
+
+
+
+
+
+
+#war{
+	overflow: hidden;
+}
+/* #war .bg1{
+	background: url(../../img/ss/dmxy/dmxy.jpg);
+	height: 1178px;
+} */
+
+.bjwz{
+	color: #fff;
+	position: absolute;
+	bottom: 0px;
+	/* left: 0px; */
+	text-align: center;
+	width: 100%;
+}
+.bjwz h2{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 100px;
+	text-shadow: 0 0 10px #c1fcff, 0 0 20px #e8f2fd, 0 0 30px #87bff3, 0 0 40px #add3f8;
+}
+.bjwz p{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 50px;
+	text-shadow: 0 0 10px #c1fcff, 0 0 20px #e8f2fd, 0 0 30px #87bff3, 0 0 40px #add3f8;
+}
+.bjwz span{
+	text-shadow: 0 0 10px #c1fcff, 0 0 20px #e8f2fd, 0 0 30px #87bff3, 0 0 40px #add3f8;
+}
+
+
+/* 按钮 */
+.bj2 .le{
+	background-color: #e29d2c;
+}
+.bj2 .re{
+	background-color: #1164d2;
+}
+	.bj2 {
+		overflow: hidden;
+		max-height: 120px;
+		color: #FFFFFF;
+	}
+
+	.bj2 .le,.bj2 .re{
+		width: 50%;
+		float: left;
+		height: 120px;
+	}
+	.bj2 .le p,.bj2 .re p{
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		align-items: center;
+		font-size: 50px;
+	}
+	.bj2 .le,.bj2 .re{
+		filter: brightness(0.8);
+	}
+	.bj2 .le:hover,.bj2 .re:hover{
+		filter: brightness(1.0);
+	}
+	
+	/* 看点 */
+	.cen1{
+		position: absolute;
+		float: left;
+		z-index: 2;
+		overflow: hidden;
+		background: url(../../img/ss/dmxy/德杯%20背景.jpg) no-repeat;
+	}
+		.cen1-1 .le h2,.cen1-1 .re h2{
+			color: #FFFFFF;
+		}
+		.cen1 .cen1-1 .le{
+			width: 60%;
+			float: left;
+			overflow: hidden;
+		}
+		.cen1 .cen1-1 .re{
+			width: 40%;
+			overflow: hidden;
+		}
+		.cen1-1 .le ul{
+			list-style: none;
+		}
+		.cen1-1 .le li{
+			width: 48%;
+			float: left;
+		}
+		.cen1-1 .le img{
+			width: 82%;
+			position: relative;
+		}
+		.cen1-1 .le img:hover{
+			width: 100%;
+			position: relative;
+		}
+		
+		.cen1-1 .re li{
+			width: 350px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-size: 20px;
+			white-space: nowrap;
+			line-height: 65px;
+			height: 65px;
+			position: relative;
+
+		}
+		.cen1-1 .re a{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+		}
+		.cen1-1 .re .a1 p{
+			font-size: 24px;
+			color: #22cdfc;
+		}
+		.cen1-1 .re li p{
+			color: #7aa9ff;
+			width: 350px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-size: 20px;
+			white-space: nowrap;
+			line-height: 65px;
+			height: 65px;
+			position: relative;
+		}
+		.cen1-1 .re  li:hover p{
+			color: #22cdfc;
+		}
+		
+/* 报名 */
+	.cen2{
+		background: url(../../img/ss/dmxy/德杯%20背景.jpg) no-repeat;
+		z-index: 1;
+		position: absolute;
+		width: 100%;
+		color: #FFFFFF;
+		display: none;
+	}
+	.cen2 .le,.cen2 .re{
+		width: 50%;
+		float: left;
+	}
+	.cen2 .le li .gj,.cen2 .re li .gj{
+		background-color: #f68d45;
+		border-radius: 7px;
+		font-size: 30px;
+	}
+	.cen2 .le li .gj1,.cen2 .re li .gj1{
+		background-color: #2d69c1;
+		border-radius: 5px;
+		font-size: 20px;
+	}
+	.cen2 .le li .jj,.cen2 .re li .jj{
+		font-size: 23px;
+	}
+	.cen2 .le li .xy,.cen2 .re li .xy{
+		color: #58dbf7;
+	}
+	.cen2 .bt{
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.cen2 ul .zs{
+		color: #54d1f7;
+	}
+	.cen2 img,.cen2 ul{
+		float: left;
+	}
+	
+	.cen2 ul{
+		list-style: none;
+		padding-top: 70px;
+		
+	}
+	.cen2  ul li{
+		padding-bottom: 10px;
+	}
+	.xuanba{
+		padding-bottom: 3.125rem;
+	}
+		
+	.ssbm{
+		text-align: center;
+	}
+	.ssbm img{
+		float: none;
+	}
+	
+	.cen2 .le1{
+		padding-left: 30%;
+	}
+
+/* 切换显示与隐藏 */
+.bj2 .le img:hover .cen2{
+	z-index: 1;
+}
+
+.bj2 .le{ background-color: #4cc9f0;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);}
+  .bj2{
+	    background-color: transparent;
+	    text-transform: uppercase;
+	    font-size: 14px;
+	    padding: 20px 20px;
+	    font-weight: 300;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	    height: 100vh;
+	    background: #23527d;
+  }
+  .bj2 .re{ background-color: #4cc9f0;
+    background-color: #f038ff;
+      -webkit-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+      -moz-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+      box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);}

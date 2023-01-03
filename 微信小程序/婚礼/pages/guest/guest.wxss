@@ -1,0 +1,21 @@
+/* pages/guest/guest.wxss */
+.bj{
+   width: 100vw;
+   height: 100vh; 
+   position: relative;
+}
+form{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 22%;
+}
+form input,form view{
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #f14dd5;
+}
+button{
+    background-color: #f14dd5;
+}

@@ -1,0 +1,9 @@
+.banner{
+    background: url(../img/1.jpg);
+}
+.sp{
+    margin-top: 10px;
+}
+.sp img{
+    border: 1px solid #000;
+}

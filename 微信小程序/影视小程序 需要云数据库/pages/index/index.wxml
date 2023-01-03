@@ -1,0 +1,76 @@
+<!-- 搜索 -->
+<view class="search-box">
+    <view class="search-inp" bindtap="geSearch">
+        <icon class="search-icon" type="search" color="#999" size="16"></icon>
+        <text class="search-text">新蝙蝠侠</text>
+    </view>
+</view>
+
+<!-- 轮播图 -->
+<block>
+    <swiper class="swiper-box" 	indicator-dots autoplay circular interval="5000" indicator-active-color="#fff" indicator-color="#999" previous-margin="20rpx" next-margin="20rpx">
+        <swiper-item wx:for="{{video}}" wx:if="{{index<3}}" wx:key="index">
+            <image src="{{item.banner}}" bindtap="geDetail" data-id="{{item._id}}" class="swiper-img"></image>
+        </swiper-item>
+    </swiper>
+</block>
+
+<!-- 主体 -->
+<block>
+    <!-- 正在热映 -->
+    <view class="movie-box">
+        <view class="movie-title">
+            <text class="movie-title-left">正在热映</text>
+            <view class="movie-title-right" data-index="0" bindtap="geMovieList">查看全部<text class="teshu"> > </text>
+            </view>
+        </view>
+        <!-- 正在热映电影 -->
+        <scroll-view scroll-x="true">
+            <view class="movie-scroll">
+                <!-- 一行7个 -->
+                <view class="movie-item" wx:for="{{video}}"  wx:if="{{index<7}}" wx:if="{{item.index==0}}" wx:key="index" bindtap="geDetail" data-id="{{item._id}}">
+                    <image class="movie-item-img" src="{{item.img}}" />
+                    <text class="movie-item-text">{{item.name}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <!-- 即将上映 -->
+    <view class="movie-box">
+        <view class="movie-title">
+            <text class="movie-title-left">即将上映</text>
+            <view class="movie-title-right" bindtap="geMovieList" data-index="1">查看全部<text class="teshu"> > </text>
+            </view>
+        </view>
+
+        <scroll-view scroll-x="true">
+            <view class="movie-scroll">
+            <!-- 一行7个 -->
+                <view class="movie-item" wx:for="{{video}}" wx:if="{{index < 7}}" wx:if="{{item.index==1}}" wx:key="index" bindtap="geDetail" data-item="{{item}}">
+                    <image class="movie-item-img" src="{{item.img}}" />
+                    <text class="movie-item-text">{{item.name}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <!-- 待映推荐 -->
+    <view class="movie-box">
+        <view class="movie-title">
+            <text class="movie-title-left">待映推荐</text>
+            <view class="movie-title-right" bindtap="geMovieList" data-index="1">查看全部<text class="teshu"> > </text>
+            </view>
+        </view>
+
+        <scroll-view scroll-x="true">
+            <view class="movie-scroll">
+                <view class="movie-item" wx:for="{{video}}" wx:key="index" bindtap="geDetail" data-item="{{item}}">
+                    <image class="movie-item-img" src="{{item.img}}" />
+                    <text class="movie-item-text">{{item.name}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+</block>

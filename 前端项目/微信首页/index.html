@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/wechat.css"/>
+	
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="mui-bar">
+		
+		<div class="nav">
+			<div class="top">
+				<img src="./img/top.png" alt="">
+			</div>
+			<div class="top1">
+				<h4 class="mui-title">微信(3)</h4>
+				<a href=""><img src="./img/jia.png" alt=""></a>
+			</div>
+			
+		</div>
+	</header>
+	<!-- 主体 -->
+	<main>
+		<div class="xx">
+			<img src="./img/tx.png" alt="">
+			<div style="border-bottom: 1px solid rgb(215 215 215);padding-bottom: 10px;">
+				<p>腾讯新闻</p><span style="font-size: 14px;">08:28</span>
+				<p style="font-size: 0.5rem;">张桂梅把头轻轻靠在江姐扮演者的肩上 当事人解释...</p>
+			</div>
+		</div>
+		<div class="xx">
+			<img src="./img/tx.png" alt="">
+			<div style="border-bottom: 1px solid rgb(215 215 215);padding-bottom: 10px;">
+				<p>腾讯新闻</p><span style="font-size: 14px;">08:28</span>
+				<p style="font-size: 0.5rem;">张桂梅把头轻轻靠在江姐扮演者的肩上 当事人解释...</p>
+			</div>
+		</div>
+		<div class="xx">
+			<img src="./img/tx.png" alt="">
+			<div style="border-bottom: 1px solid rgb(215 215 215);padding-bottom: 10px;">
+				<p>腾讯新闻</p><span style="font-size: 14px;">08:28</span>
+				<p style="font-size: 0.5rem;">张桂梅把头轻轻靠在江姐扮演者的肩上 当事人解释...</p>
+			</div>
+		</div>
+
+	</main>
+	<nav>
+		<ul>
+			<li  onclick="no1()" style="background: url(./img/nav1-1.png)no-repeat;background-size: 100%;"><a href="javascript:void(0)" >微信</a> <span>3</span></li>
+			<li  onclick="no2()" style="background: url(./img/nav3.png)no-repeat ;background-size: 100%;"><a href="http://baidu.com">通讯录</a></li>
+			<li  onclick="no3()" style="background: url(./img/nav2.png)no-repeat ;background-size: 100%;"><a href="javascript:void(0)">发现</a><span class="dian"></span></li>
+			<li  onclick="no4()" style="background: url(./img/nav4.png)no-repeat ;background-size: 100%;"><a href="javascript:void(0)">我的</a></li>
+		</ul>
+	</nav>
+
+	<script>
+		
+		var li=document.querySelectorAll('nav ul li')
+		var a=document.querySelectorAll('nav ul li a')
+		console.log(li[0].style.background)
+		function no1(){
+			li[0].style.background='url(./img/nav1-1.png)no-repeat ';
+			li[0].style.backgroundSize='100%';
+			a[0].style.color='rgb(7, 193, 96)';
+
+			li[1].style.background='url(./img/nav3.png)no-repeat ';
+			li[1].style.backgroundSize='100%';
+			a[1].style.color='rgb(0, 0, 0)';
+
+			li[2].style.background='url(./img/nav2.png)no-repeat ';
+			li[2].style.backgroundSize='100%';
+			a[2].style.color='rgb(0, 0, 0)';
+
+			li[3].style.background='url(./img/nav4.png)no-repeat ';
+			li[3].style.backgroundSize='100%';
+			a[3].style.color='rgb(0, 0, 0)';
+		}
+		function no2(){
+			li[0].style.background='url(./img/nav1.png)no-repeat ';
+			li[0].style.backgroundSize='100%';
+			a[0].style.color='rgb(0, 0, 0)';
+
+			li[1].style.background='url(./img/nav3-3.png)no-repeat ';
+			li[1].style.backgroundSize='100%';
+			a[1].style.color='rgb(7, 193, 96)';
+
+			li[2].style.background='url(./img/nav2.png)no-repeat ';
+			li[2].style.backgroundSize='100%';
+			a[2].style.color='rgb(0, 0, 0)';
+
+			li[3].style.background='url(./img/nav4.png)no-repeat ';
+			li[3].style.backgroundSize='100%';
+			a[3].style.color='rgb(0, 0, 0)';
+		}
+		function no3(){
+			li[0].style.background='url(./img/nav1.png)no-repeat ';
+			li[0].style.backgroundSize='100%';
+			a[0].style.color='rgb(0, 0, 0)';
+
+			li[1].style.background='url(./img/nav3.png)no-repeat ';
+			li[1].style.backgroundSize='100%';
+			a[1].style.color='rgb(0, 0, 0)';
+
+			li[2].style.background='url(./img/nav2-2.png)no-repeat ';
+			li[2].style.backgroundSize='100%';
+			a[2].style.color='rgb(7, 193, 96)';
+
+			li[3].style.background='url(./img/nav4.png)no-repeat ';
+			li[3].style.backgroundSize='100%';
+			a[3].style.color='rgb(0, 0, 0)';
+		}
+		function no4(){
+			li[0].style.background='url(./img/nav1.png)no-repeat ';
+			li[0].style.backgroundSize='100%';
+			a[0].style.color='rgb(0, 0, 0)';
+
+			li[1].style.background='url(./img/nav3.png)no-repeat ';
+			li[1].style.backgroundSize='100%';
+			a[1].style.color='rgb(0, 0, 0)';
+
+			li[2].style.background='url(./img/nav2.png)no-repeat ';
+			li[2].style.backgroundSize='100%';
+			a[2].style.color='rgb(0, 0, 0)';
+
+			li[3].style.background='url(./img/nav4-4.png)no-repeat ';
+			li[3].style.backgroundSize='100%';
+			a[3].style.color='rgb(7, 193, 96)';
+		}
+	</script>
+</body>
+</html>

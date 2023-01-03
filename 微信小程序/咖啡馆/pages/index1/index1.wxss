@@ -1,0 +1,81 @@
+/* pages/index1/index1.wxss */
+.APP{
+    display: flex;
+    flex-direction: column;
+}
+image{
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    height: 310px;
+    position: relative;
+}
+.banner1{
+    height: 100%;
+}
+.scroll-view_H{
+    white-space: nowrap;
+  }
+  .table1{
+    margin-top: 20px;
+    display: inline-block;
+    width: 110px;
+  }
+.red{
+    background-color: red;
+    color: #ffffff !important;
+}
+
+.banner2{
+    position: absolute;
+    /* display: block; */
+    width: 80%;
+    height: 75px;
+    bottom: 0px;
+    align-items: center;
+    text-align: center;
+    left: 10%;
+}
+
+.dianpu{
+    position: relative;
+}
+.dp{
+    z-index: 999;
+    position: absolute;
+    width: 120px;
+    right: 0px;
+    border: 1px solid red;
+    border-radius: 50px;
+    padding: 10px;
+}
+.dp text{
+    padding: 5px;
+    border-radius: 30px;
+    color: red;
+}
+
+
+
+
+.KCoffee{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sp{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    box-shadow: 5px 1px 12px -4px #888888;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.sp image{
+    width: 100%;
+    height: 186px;
+    overflow: hidden;
+    border-radius: 10px;
+}

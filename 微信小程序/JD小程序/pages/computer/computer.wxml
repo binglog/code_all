@@ -1,0 +1,18 @@
+
+<view style="margin:50px">
+    <view>
+        <text>请输入第一个数字</text>
+        <input model:value="{{n1}}" bindinput="n1input" type="digit"/>
+    </view>
+    <view>
+        <text>请输入第二个数字</text>
+        <input model:value="{{n2}}" bindinput="n2input" type="digit"/>
+    </view>
+
+    <text>比较大小：{{daxiao}}</text>
+
+    <button disabled="{{bj}}" size="default"  type="primary" bindtap="bijiao">比较</button>
+
+    <button bindtap="qingchu" size="default"  type="primary">清除</button>
+</view>
+

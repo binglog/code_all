@@ -1,0 +1,8 @@
+<!--pages/picture/picture.wxml-->
+<view wx:for="{{video}}">
+    <text>{{item.title}}</text>
+    <text>时间：{{item.time}}</text>
+    <video title="cs" id="myVideo" enable-danmu="true" danmu-list="{{danmuList}}" src="{{item.src}}"></video>
+    <input type="text" bindinput="input" placeholder="祝福语"/>
+    <button type="primary"  bindtap="bindInputBlur">发送</button>
+</view>

@@ -1,0 +1,71 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	color: #FFFFFF;
+}
+body{
+	background-color: #000000;
+}
+#cen{
+	width: 90%;
+	margin: auto;
+}
+#cen1{
+	    width: 1240px;
+	    margin: auto;
+	height: 500px;
+	background: url(../../../img/yx/中单/阿狸.jpg) no-repeat;
+	    background-position: 100%;
+}
+#cen1 .yxmc{
+	height: 100%;
+	background-color: #000000;
+	-webkit-filter: opacity(55%);
+
+}
+#cen1 .yxmc .wz{
+	position: relative;
+	top: 100px;
+	z-index: 1;
+	text-align: center;
+	top: 200px;
+}
+#cen1 .yxmc .wz a{
+	background-color: burlywood;
+	border-radius: 0.625rem;
+	font-size: 40px;
+	position: relative;
+	bottom: 0;
+}
+#cen1 img{
+	float: left;
+	position: relative;
+	top: 100px;
+	z-index: 1;
+	    border: 5px solid #fff;
+	    border-radius: 100px;
+}
+#foot{
+	width: 60%;
+	float: right;
+	
+}
+#foot .xz{
+	overflow: hidden;
+	font-size: 30px;
+}
+#foot .xz ul{
+	list-style: none;
+	display: flex;
+	    justify-content: space-around;
+}
+#foot .gushi{
+	font-size: 20px;
+}
+#foot .xz ul li{
+	float: left;
+}
+
+#foot .yxjs .jineng,#foot .yxjs .shiyong{
+	display: none;
+}

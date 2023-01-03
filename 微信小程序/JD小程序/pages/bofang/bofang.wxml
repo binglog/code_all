@@ -1,0 +1,7 @@
+<!--pages/bofang/bofang.wxml-->
+<text>pages/bofang/bofang.wxml</text>
+<view style="width: 100px;height: 100px;">
+123
+    <include src="as.wxml">  90808</include>
+</view>
+

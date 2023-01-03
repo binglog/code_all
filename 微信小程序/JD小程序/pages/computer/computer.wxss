@@ -1,0 +1,15 @@
+/* pages/computer/computer.wxss */
+
+text{
+    font-size: 18px;
+}
+input{
+    border-bottom: 1px solid #000;
+}
+.input{
+    width: 90%;
+    margin: 0 auto;
+}
+button{
+    margin-top: 10px;
+}

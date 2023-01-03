@@ -1,0 +1,11 @@
+/* pages/jisuanqi/jisuanqi.wxss */
+.xianshi{
+    display: flex;
+    flex-direction: column;
+}
+.xianshi text{
+
+}
+.anniu{
+    display: flex;
+}

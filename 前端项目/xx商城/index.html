@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mb-5">
+        <!-- 导航 -->
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">xx商城</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">主页</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">xx</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">xx</a></li>
+                          <li><a class="dropdown-item" href="#">xx</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">xx</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" id="inputvlaue" type="search" placeholder="请输入商品名称" aria-label="Search">
+                      <button class="btn btn-outline-success" type="button" onclick="search()">search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <!-- 主体 -->
+        <div class="row mt-5" style="justify-content: center;">
+            <!-- 左侧 轮播图 商品-->
+            <div class="col-8">
+                <!-- 轮播图 -->
+                <div class="row">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" >
+                        <!-- 间隔2s data-bs-interval="2000" -->
+                      <div class="carousel-item active" data-bs-interval="2000" style="height: 300px;">
+                        <img src="./img/banner1.webp" class="d-block h-100 w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>这是一个桌子</h5>
+                          <p>是的这是一个桌子.</p>
+                        </div>
+                      </div>
+                      <!-- 间隔2s data-bs-interval="2000" -->
+                      <div class="carousel-item" data-bs-interval="2000" style="height: 300px;">
+                        <img src="./img/banner2.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>这是一个吊灯</h5>
+                          <p>平平无奇的吊顶</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+
+                <!-- 商品 -->
+                <div class="row mt-4 ssp">
+                   <!-- 动态内容js文件填充 -->
+                </div>
+            </div>
+            <!-- 右侧 注册登录 商品结算-->
+            <div class="col-4">
+                <!-- 登录注册 -->
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://img1.baidu.com/it/u=3687439759,762014130&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1671382800&t=40ab8b3a6f5b410bffa373a68e62973e" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Hi 请登录</h5>
+                          <p class="card-text">登录以此获取更棒的体验！！</p>
+
+
+                          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">登录</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-4">
+                                          <label for="validationServer01" class="form-label">First name</label>
+                                          <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                                          <div class="valid-feedback">
+                                           登录没有完善请到注册界面
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <label for="validationServer02" class="form-label">Last name</label>
+                                          <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                                          <div class="valid-feedback">
+                                            登录没有完善请到注册界面
+                                          </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <button class="btn btn-primary" type="submit">登陆</button>
+                                        </div>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">还没有账号？注册</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">注册</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                          <label for="validationServer01" class="form-label">账号</label>
+                                          <input type="text" class="form-control" id="validationServer001" placeholder="请输入2个以上的汉字" required>
+                                          <div class="invalid-feedback" id="validationServerUsernameFeedback">
+                                            请输入4个以上的字符
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="validationServer02" class="form-label">密码</label>
+                                          <input type="text" class="form-control " id="validationServer002" placeholder="请输入6位以上的字符" required>
+                                          <div class="invalid-feedback" id="validationServerUsernameFeedback">
+                                            请输入6位以上的字符
+                                          </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="javascript:void(0);" class="btn btn-primary" type="button" onclick="tj()">注册账号</a>
+                                        </div>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">已有账号？登录</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button" >登录|注册</a>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- 商品结算 -->
+                <div class="row mt-5">
+                    <ol class="list-group list-group-numbered spjs">
+                        <!-- 内容js填充 -->
+
+
+                        <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                          </div>
+                          <span class="badge bg-primary rounded-pill">14</span>
+                        </li> -->
+                        
+                      </ol>
+                </div>
+
+                <!--  总金额 -->
+                <div class="row mt-5 ">
+                    <p>总金额：<span class="zje">0</span>元</p>
+                    <button type="button" class="btn btn-warning" onclick="clearn()">清空购物车</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

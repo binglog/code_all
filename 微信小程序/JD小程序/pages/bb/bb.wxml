@@ -1,0 +1,8 @@
+<!--pages/bb/bb.wxml-->
+<view><text>编号 | 姓名 | 性别 | qq</text></view>
+<view wx:for="{{t}}">
+    <text>{{index+1}} </text>
+    <text>{{item.name}}</text>
+    <text>{{item.sex}}</text>
+    <text>{{item.qq}}</text>
+</view>

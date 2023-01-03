@@ -1,0 +1,55 @@
+/* 战队招募 */
+*{
+	padding: 0;
+	margin: 0;
+	line-height: inherit;
+	color: #FFFFFF;
+}
+/* 背景 */
+#war{
+	background: url(../../../img/index_bg.jpg) no-repeat center top;
+}
+.main{
+	padding-top: 880px;
+}
+
+/* 战队 */
+.zhandui{
+	background: url(../../../img/VS.png) no-repeat center top;
+	height: 1000px;
+}
+/* 左侧IG */
+.zhandui .IG,.zhandui .FPX{
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+.IG .IGIN{
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+.FPX .FPXIN{
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+.IG img{
+	height: 691px;
+}
+.IG img,.FPX img{
+	border-radius: 20px;
+}
+.IG img:hover{
+	    background: rgba(76,201,240,0.3);
+	    -webkit-box-shadow: 10px -6px 104px -3px rgb(76 201 240);
+	    -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+	    box-shadow: 10px 10px 99px 6px rgb(76 201 240);
+}
+
+.FPX img:hover{
+	    background: rgba(76,201,240,0.3);
+	    -webkit-box-shadow: 10px -6px 104px -3px rgb(76 201 240);
+	    -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+	    box-shadow: 10px 10px 99px 6px rgb(76 201 240);
+}

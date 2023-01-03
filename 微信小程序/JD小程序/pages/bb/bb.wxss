@@ -1,0 +1,4 @@
+/* pages/bb/bb.wxss */
+text{
+    margin-left: 30px;
+}

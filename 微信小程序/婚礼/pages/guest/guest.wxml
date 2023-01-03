@@ -1,0 +1,12 @@
+<!--pages/guest/guest.wxml-->
+<image class="bj" src="/image/update/bj_2.png"></image>
+<form action="">
+    <input type="text"  bindblur="inputxm" placeholder="请输入您的姓名"/>
+    <input type="number"  bindblur="inputsj"  placeholder="请输入您的手机号码"/>
+    <picker bindchange="bindPickerChange" mode="selector" value="{{index}}" range="{{array}}" >
+        <view class="picker">
+      参加人数：{{array[index]}}
+    </view></picker>
+    <input type="text"  bindblur="inputzf"  name="" id="" placeholder="输入您的祝福语"/>
+    <button formType="submit"  bindtap="tijiao">提交</button>
+</form>

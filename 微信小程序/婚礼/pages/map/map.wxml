@@ -1,0 +1,3 @@
+<!--pages/map/map.wxml-->
+<map id="myMap" scale="10" show-location bindmarkertap="markertap" name="婚礼地点" markers="{{markers}}" ></map>
+<button bindtap="markertap" type="primary">线路规划</button>

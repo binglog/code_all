@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/hd/hd",
+    "pages/ls/ls"
+  ],
+  "tabBar": {
+    "backgroundColor": "#ff0000",
+    "color": "#000",
+    "selectedColor": "#fff",
+      "list": [{
+          "pagePath": "pages/index/index",
+          "text": "建党101周年庆祝"
+      },
+      {
+        "pagePath": "pages/hd/hd",
+        "text": "优秀影视"
+
+    },
+    {
+        "pagePath": "pages/ls/ls",
+        "text": "历史"
+    }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

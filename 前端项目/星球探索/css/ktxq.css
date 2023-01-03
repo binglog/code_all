@@ -1,0 +1,33 @@
+.App1{
+    background-color: black;
+    height: 100%;
+}
+.xq{
+    margin-top: 20%;
+}
+.xq div{
+    border: none;
+}
+.card{
+    position: relative;
+    height: 246px;
+}
+.card-body{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 30%;
+    padding: 0;
+}
+button{
+    border: none;
+}
+.xqtop{
+    width: 100px;
+    position: absolute;
+    left: 32%;
+    top: -22%;
+}
+.xqmt img{
+    width: 100px;
+}
