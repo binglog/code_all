@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/1.css">
+    <link rel="stylesheet" href="./static/css/tabbars.css">
+
+</head>
+<body>
+
+    <div class="app">
+        <div>
+            <img src="" alt="">
+        </div>
+        <h2>
+            <!--内容填充 -->
+        </h2>
+        <h1>
+            <!-- 内容填充 -->
+        </h1>
+        <span>押一付一</span>
+        
+        <!-- 安选 -->
+        <div class="anxuan">
+            <div>
+                <span>安选</span>
+                <span>已通过真房是怕体验</span>
+            </div>
+            <div>
+                <p>免费领保障></p>
+            </div>
+        </div>
+        <!-- 楼房详细信息 -->
+        <div class="xx">
+            <div>
+                <h1>一室一厅一卫</h1>
+                <span>房型</span>
+            </div>
+            <div>
+                <h1>50m</h1>
+                <span>面积</span>
+            </div>
+            <div>
+                <h1>中/31层</h1>
+                <span>楼层</span>
+            </div>
+            <div>
+                <h1>南</h1>
+                <span>朝向</span>
+            </div>
+        </div>
+
+        <!-- 标签 -->
+        <div class="bq">
+            <span>真房实拍</span>
+            <span>押一付一</span>
+            <span>南北通透</span>
+            <span>有电梯</span>
+            <span>精装修</span>
+            <span>有阳台</span>
+            <span>首次出租</span>
+        </div>
+
+
+        <!-- 房屋介绍 -->
+        <div class="js">
+            <h1>房屋介绍</h1>
+            <div>
+                <ul style="list-style-type: decimal;">
+                    <li>所有图片均为实地拍摄，无虚假照片！</li>
+                    <li>交通便利，小区附近公交站，地铁站！</li>
+                    <li>家具家电齐全，直接领包入住</li>
+                    <li>成熟小区，周边配套齐全，商场，商业街都有</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- 预约看房 -->
+        <div class="kf">
+            <div>
+                <img src="./static/img/home/房屋认证.svg" alt="">
+                <p>预约看房</p>
+            </div>
+            <div>
+                <img src="./static/img/tuijian/评论.svg" alt="">
+                <p>微聊</p>
+            </div>
+            <div>
+                <img src="./static/img/tuijian/电话.svg" alt="">
+                <p>电话</p>
+            </div>
+        </div>
+
+    
+    <!-- tabbars -->
+    <div class="tabbars">
+        <!-- 渲染 tabbbars.js-->
+    </div>
+    <script src="./static/app.js"></script>
+    <script src="./static/js/tabbars.js"></script>
+    <script>
+        let a=app.index.content.tj[0]
+        document.querySelector('.app>div:nth-of-type(1) img').setAttribute('src',a.img)
+        document.querySelector('.app>h2').innerText=a.title
+
+        document.querySelector('.app>h1').innerText=a.rmb+"元/月"
+
+
+    </script>
+</body>
+</html>
