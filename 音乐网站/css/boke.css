@@ -1,0 +1,12 @@
+.btn-primary img{
+    width: 100%;
+}
+.card-body{
+    height: 100% !important;
+}
+img{
+    width: 100%;
+}
+.btn.focus, .btn:focus{
+    box-shadow: none !important;
+}
